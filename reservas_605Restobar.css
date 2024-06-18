@@ -1,0 +1,236 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, main, footer, div {
+    display: block;
+}
+
+body {
+    background: #343A40;
+}
+h2{ 
+    font-size: 2.7em;
+}
+h3,h4{ 
+    font-size: 1.7em;
+}
+
+h2,h3,h4,footer p,p {
+    color: #ffffff;
+    text-align: center;
+    width:100%;
+    height:auto;
+}
+
+a {
+    color: rgb(239, 184, 16);
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+header, footer{
+    margin: 0 auto;
+    max-width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    bottom: 0;
+}
+
+section{
+    margin: 0 auto;
+    max-width: 90%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#horario.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #212529;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+#horario{
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.7em;
+    color:#fff;
+    border-radius:8px ;
+    width:100%;
+    height:auto;
+    box-shadow: 30px 0px 0px #000000;
+}
+
+#horario {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#horario td {
+    border-radius:8px ;
+    padding: 10px;
+    text-align: center;
+    background-color:transparent;
+    color: #fff;
+}
+
+#fila-1,#fila-4{
+    background-color: #EFB810;
+    font-weight: bold;
+}
+
+
+#fila-6 {
+    background-color:  #C82333;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
+nav, li {
+    display: inline-block;
+    padding: 0.5em;
+}
+nav, a {
+    background: rgb(22,22,29);
+    border: 0.1em solid rgb(239, 184, 16);
+    border-radius: 0.20em;
+}
+
+
+#fondo_logo,footer,header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #16161d;
+    border:  rgb(22,22,29) solid;
+}
+
+
+/* Nuevos estilos para el formulario */
+
+
+form {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+#horario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#horario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+fieldset {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+legend,label,table{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+legend {
+    font-size: 1.5em;
+    color:  #EFB810;
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color:  #ffffff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+textarea,
+select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    width: calc(33.33% - 14px);
+    padding: 10px;
+    margin: 5px 5px 0 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+}
+
+input[type="reset"] {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+input[type="button"] {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+    opacity: 0.9;
+}
+
+a {
+    text-decoration: none;
+}
+
+.form-container {
+    justify-content: center;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+margin-bottom: 10px;
+} 
+@media (max-width: 768px) {
+    head,body,footer{
+        min-width: 480px; /* Establece un ancho mínimo para pantallas pequeñas */
+    }
+}

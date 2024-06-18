@@ -1,0 +1,130 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, main, footer, div {
+    display: block;
+}
+
+body {
+    background: #343A40;
+}
+h2,h3,h4{ 
+    font-size: 2.7em;
+}
+
+h2,h3,h4,p,footer p {
+    color: #ffffff;
+    text-align: center;
+    width:100%;
+    height:auto;
+}
+
+.fuente_1 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+a {
+    color: rgb(239, 184, 16);
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+header, footer{
+    margin: 0 auto;
+    max-width: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+header{
+margin-bottom: 8%;
+}
+
+section{
+    margin: 0 auto;
+    max-width: 90%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+nav, li {
+    display: inline-block;
+    padding: 0.5em;
+}
+
+nav, a {
+    background: rgb(22,22,29);
+    border: 0.1em solid rgb(239, 184, 16);
+    border-radius: 0.20em;
+}
+
+#fondo_logo,footer,header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #16161d;
+    border:  rgb(22,22,29) solid;
+}
+
+h1 {
+    padding-top: 1%;
+    padding-bottom: -1%;
+}
+
+
+#últimas-novedades>img{
+border-radius:8px ;
+width:100%;
+height:auto;
+box-shadow: 0px 0px 30px #000000;
+}
+#últimos-eventos>img{
+    border-radius:8px ;
+    width:100%;
+    height:auto;
+    box-shadow: 0px 0px 30px #000000;
+    }
+#últimas-novedades, #últimos-eventos{
+    display: grid; 
+    grid-template-columns: 
+        repeat( 
+            auto-fit, 
+            minmax(400px, 1fr) 
+        ); 
+    gap: 32px; 
+}
+#entrada>img{
+    border-radius:8px ;
+    width:100%;
+    height:auto;
+    box-shadow: 0px 0px 30px #000000;
+}
+#entrada{
+    margin-bottom: 10%;
+    display: grid; 
+    grid-template-columns: 
+        repeat( 
+            auto-fit, 
+            minmax(400px,1fr) 
+        );
+        margin-bottom: 8%;
+    gap: 32px;
+    align-items: center;
+}
+#entrada .img-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 150%; 
+}
+
+@media (max-width: 768px) {
+    head,body,footer{
+        min-width: 480px; /* Establece un ancho mínimo para pantallas pequeñas */
+    }
+}
